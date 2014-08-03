@@ -1,5 +1,8 @@
 # encoding: utf-8
+
+require 'yaml'
 require './lib/pry-plus'
+
 Gem::Specification.new do |s|
   deps = YAML.load_file('in.yml').keys
   s.name          = 'pry-plus'
